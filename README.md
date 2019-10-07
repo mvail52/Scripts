@@ -1,2 +1,2 @@
 # Scripts
- This repository contains scripts that I have created for situations that I have run into in the work place, personal and in grad school.
+ This repository contains scripts that I have created for situations that I have run into in the work place, personal and in grad school. If I have taken from somebody else’s work, I will always try to credit them with where the script originated. Unfortunately, due to these scripts being create over the last ten years for a variety project I may not have the origin or what I referenced. My hope is not to steal or take credit for anybody’s work but to contribute and share the knowledge I have gained with other so that they do not make the same mistakes I have.  
