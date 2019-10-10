@@ -52,11 +52,11 @@ WHERE [ID] = @UniqueID
 
 SET @URL
     = 'https://maps.google.com/maps/api/geocode/xml?sensor=false&address='
-      + IIF(@Address IS NOT NULL, @Address + ' ', '') 
-	  + IIF(@City IS NOT NULL, @City + ' ', '')
-      + IIF(@State IS NOT NULL, @State + ' ', '') 
-	  + IIF(@PostalCode IS NOT NULL, @PostalCode + ' ', '')
-      + IIF(@Country IS NOT NULL, @Country + ' ', '')
+      + IIF(NULLIF(@Address,'') IS NOT NULL, @Address + ' ', '') 
+	  + IIF(NULLIF(@City,'') IS NOT NULL, @City + ' ', '')
+      + IIF(NULLIF(@State,'') IS NOT NULL, @State + ' ', '') 
+	  + IIF(NULLIF(@PostalCode,'') IS NOT NULL, @PostalCode + ' ', '')
+      + IIF(NULLIF(@Country,'') IS NOT NULL, @Country + ' ', '')
 
 --The format requires spaces to be +.
 --Please visit to https://developers.google.com/maps/documentation/embed/get-api-key to get instructions to get API key inset below and uncomment 
