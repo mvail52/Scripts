@@ -27,8 +27,9 @@ WHILE @@FETCH_STATUS = 0
           AND [db].[name] = @site)
 
     SET @sql = 'use ' + @site + '; DBCC SHRINKFILE (N''' + @log + ''', 0, TRUNCATEONLY)'
+	PRINT(@site + ' logs are starting to be truncated')
     EXEC (@sql)
-    PRINT @sql
+	PRINT(@site + ' logs finished truncating')
     FETCH NEXT FROM [cur]
      INTO @site
 
