@@ -9,4 +9,4 @@ This was created to build a classification tree based on a data set. If you want
   1) I might come back around later an implement something that will look for user input have them set which columns to use as variables, or automatically set them based on file format. 
 
 ***Articles***
-https://arstechnica.com/information-technology/2019/10/chemists-discover-cross-platform-python-scripts-not-so-cross-platform/?fbclid=IwAR0rvUh6WNU6_QGhAPR-KK9cCOG2ntN9NRDVLShzvsvOQKhPus3CV4Yp1_4
+  1) https://arstechnica.com/information-technology/2019/10/chemists-discover-cross-platform-python-scripts-not-so-cross-platform/?fbclid=IwAR0rvUh6WNU6_QGhAPR-KK9cCOG2ntN9NRDVLShzvsvOQKhPus3CV4Yp1_4
