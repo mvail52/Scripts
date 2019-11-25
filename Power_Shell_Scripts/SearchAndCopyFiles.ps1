@@ -9,7 +9,7 @@ foreach( $e in Get-ChildItem -Path $location -Name -Recurse)
 
     if ($e.ToString() -like "*$search*")
         {
-            $name = Split-Path(Split-Path "$e") -leaf
+            $name = Split-Path "$e" -leaf
             $dest = $destination+ "\" + $name.ToString()
 
             Copy-Item "$e" -Destination $dest
